@@ -1,2 +1,6 @@
-package com.rian.armarios.model;public enum StatusAluguel {
+package com.rian.armarios.model;
+
+public enum StatusAluguel {
+
+    CONFIRMADO , NEGADO
 }
