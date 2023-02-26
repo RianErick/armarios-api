@@ -16,9 +16,11 @@ public class SolicitacaoArmario {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @OneToOne
     @JoinColumn(name = "aluno_id")
     private AlunoBolsista aluno;
 
+    @OneToOne
     @JoinColumn(name = "armario_id")
     private Armario armario;
 
