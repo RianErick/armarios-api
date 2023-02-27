@@ -8,4 +8,6 @@ import java.util.Optional;
 public interface AlunoBolsistaRepository extends JpaRepository<AlunoBolsista,Long> {
 
     Optional <AlunoBolsista> findByEmail(String email);
+
+    Optional <AlunoBolsista> findByMatricula(String matricula);
 }
