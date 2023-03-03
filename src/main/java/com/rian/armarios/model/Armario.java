@@ -15,13 +15,9 @@ public class Armario  {
     @Id
     private Long id;
 
-    @OneToOne
-    @JoinColumn(name = "aluno-id")
-    private AlunoBolsista alunoId;
-
     private String cor;
 
-    @Column(name = "numero-chave")
+    @Column(name = "numero_chave")
     private String numeroChave;
 
     private String localizacao;
@@ -29,6 +25,8 @@ public class Armario  {
     @Enumerated(EnumType.STRING)
     private StatusArmario status;
 
-
+    public Armario(StatusArmario status){
+        this.status = status;
+    }
 
 }

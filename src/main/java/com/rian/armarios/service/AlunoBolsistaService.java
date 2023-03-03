@@ -23,11 +23,10 @@ public class AlunoBolsistaService {
         boolean emailExistente = alunoBolsistaRepository.findByEmail(aluno.getEmail())
                 .stream()
                 .anyMatch(clienteExistente -> !clienteExistente.equals(aluno));
-
-        if (emailExistente) {
-            throw new AlunoBolsistaException("Email Ja Cadastrado");
-        }
-        return alunoBolsistaRepository.save(aluno);
+               if (emailExistente) {
+             throw new AlunoBolsistaException("Email Ja Cadastrado");
+            }
+           return alunoBolsistaRepository.save(aluno);
     }
 
 }
