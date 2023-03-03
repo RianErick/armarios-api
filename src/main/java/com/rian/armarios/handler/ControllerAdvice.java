@@ -9,13 +9,11 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 @RestControllerAdvice
 public class ControllerAdvice {
-
-
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ExceptionHandler(AlunoBolsistaException.class)
+
     public AlunoBolsistaEx Ex(AlunoBolsistaException ex) {
         String mensagemErro = ex.getMessage();
-
         return new AlunoBolsistaEx(mensagemErro);
     }
 
