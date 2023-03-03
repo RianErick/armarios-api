@@ -1,0 +1,1 @@
+alter table armario drop column aluno_id
