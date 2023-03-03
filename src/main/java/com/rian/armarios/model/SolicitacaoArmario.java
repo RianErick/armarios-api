@@ -30,4 +30,6 @@ public class SolicitacaoArmario {
     @Enumerated(EnumType.STRING)
     @Column(name = "status_sl")
     private StatusAluguel statusAluguel;
+
+
 }
