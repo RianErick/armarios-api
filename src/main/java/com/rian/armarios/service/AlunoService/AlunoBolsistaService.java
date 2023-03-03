@@ -1,4 +1,4 @@
-package com.rian.armarios.service;
+package com.rian.armarios.service.AlunoService;
 
 import com.rian.armarios.handler.exception.AlunoBolsistaException;
 import com.rian.armarios.model.AlunoBolsista;

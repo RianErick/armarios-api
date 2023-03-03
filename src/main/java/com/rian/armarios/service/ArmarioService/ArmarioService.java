@@ -1,5 +1,4 @@
-package com.rian.armarios.service;
-
+package com.rian.armarios.service.ArmarioService;
 import com.rian.armarios.model.Armario;
 import com.rian.armarios.model.StatusArmario;
 import com.rian.armarios.repository.ArmarioRepository;
@@ -12,9 +11,11 @@ public class ArmarioService {
 
     @Autowired
    private ArmarioRepository armarioRepository;
+
     @Transactional
-    public Armario CadastrarArmario(Armario armario){
+    public Armario cadastrarArmario(Armario armario){
          armario.setStatus(StatusArmario.DISPONIVEL);
          return armarioRepository.save(armario);
     }
+
 }

@@ -2,10 +2,9 @@ package com.rian.armarios.controller;
 
 
 import com.rian.armarios.handler.exception.AlunoBolsistaException;
-import com.rian.armarios.handler.model.AlunoBolsistaEx;
 import com.rian.armarios.model.AlunoBolsista;
 import com.rian.armarios.repository.AlunoBolsistaRepository;
-import com.rian.armarios.service.AlunoBolsistaService;
+import com.rian.armarios.service.AlunoService.AlunoBolsistaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -35,6 +34,15 @@ public class AlunoBolsistaController {
         return alunoBolsistaRepository.findById(id)
                 .map(alunoBolsista -> ResponseEntity.ok(alunoBolsista))
                 .orElseThrow(() -> new AlunoBolsistaException("Id do Aluno nao existe na base de dados"));
+    }
+    @PutMapping("/editar/{id}")
+    public ResponseEntity <AlunoBolsista> edit(@PathVariable Long id, @RequestBody AlunoBolsista alunoBolsista){
+        if(!alunoBolsistaRepository.existsById(id)){
+            return ResponseEntity.notFound().build();
+        }
+        alunoBolsista.setId(id);
+        alunoBolsistaService.salvar(alunoBolsista);
+        return ResponseEntity.ok(alunoBolsista);
     }
 
 }

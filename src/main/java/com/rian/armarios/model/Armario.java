@@ -25,8 +25,8 @@ public class Armario  {
     @Enumerated(EnumType.STRING)
     private StatusArmario status;
 
-    public Armario(StatusArmario status){
-        this.status = status;
+    public Armario(){
+
     }
 
 }

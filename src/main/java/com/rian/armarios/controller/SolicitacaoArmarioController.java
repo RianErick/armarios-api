@@ -1,7 +1,7 @@
 package com.rian.armarios.controller;
 
 import com.rian.armarios.model.SolicitacaoArmario;
-import com.rian.armarios.service.SolicitacaoArmarioService;
+import com.rian.armarios.service.SolicitacaoService.SolicitacaoArmarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
