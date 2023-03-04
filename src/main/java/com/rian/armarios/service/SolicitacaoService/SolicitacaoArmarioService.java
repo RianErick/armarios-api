@@ -5,6 +5,7 @@ import com.rian.armarios.model.StatusAluguel;
 import com.rian.armarios.model.StatusArmario;
 import com.rian.armarios.repository.SolicitacaoArmarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import java.time.LocalDate;
@@ -23,8 +24,10 @@ public class SolicitacaoArmarioService {
         solicitacaoArmario.setStatusAluguel(StatusAluguel.CONFIRMADO);
         armario.setStatus(StatusArmario.ALUGADO);
         return solicitacaoArmarioRepository.save(solicitacaoArmario);
-
     }
-
+    @Transactional
+    public void deletar (Long clienteId) {
+       solicitacaoArmarioRepository.deleteById(clienteId);
+    }
 
 }
