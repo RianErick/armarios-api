@@ -28,7 +28,7 @@
     <li>Clone o repositório para sua máquina:</li>
 </ol>
 
-<pre><code>git clone https://github.com/RianErick/https:/armarios-api</code></pre>
+<pre><code>git clone https://github.com/RianErick/armarios-api</code></pre>
 <ol start="2">
     <li>Abra o projeto em sua IDE de preferência (recomendamos o uso do IntelliJ IDEA).</li>
     <li>Configure o arquivo application.properties com as informações de seu banco de dados MySQL:</li>
