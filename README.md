@@ -38,6 +38,7 @@
 <pre><code>spring.datasource.url=jdbc:mysql://localhost:3306/nome-do-banco-de-dados
 <ol start="4">
     <li>Execute as migrações de banco de dados com o Flyway:</li>
+    <li>Para Criar as tabelas no seu banco de dadoos</li>
 </ol>
 
 
