@@ -1,27 +1,39 @@
 
-#Nome do Projeto
-Uma breve descrição do projeto.
+<p>Este projeto é um sistema de gerenciamento de armários escolares, com operações CRUD para as entidades "aluno" e "armário", além de funcionalidades adicionais como criação de listas de alunos e armários, criação de solicitações de armários para alunos específicos, e conexão com banco de dados utilizando a arquitetura REST API.</p>
 
-Requisitos
-Liste todos os requisitos necessários para executar o projeto, incluindo dependências, bibliotecas e ferramentas necessárias.
+<h2>Requisitos</h2>
 
-Instalação
-Instruções passo a passo para instalar e configurar o projeto em uma máquina local.
+<p>Para executar o projeto, você precisará ter as seguintes ferramentas instaladas em sua máquina:</p>
 
-Uso
-Instruções sobre como usar o projeto, incluindo exemplos de como executá-lo.
+<ul>
+    <li>Java 8 ou superior</li>
+    <li>Maven</li>
+    <li>MySQL</li>
+</ul>
 
-Rotas/API
-Liste e descreva todas as rotas/APIs disponíveis no projeto, incluindo informações sobre os métodos HTTP suportados, parâmetros e respostas.
+<h2>Tecnologias utilizadas</h2>
 
-Banco de Dados
-Descreva como o banco de dados do projeto é estruturado e como ele pode ser configurado e acessado.
+<ul>
+    <li>Spring Boot</li>
+    <li>Spring Data JPA</li>
+    <li>Flyway</li>
+    <li>MySQL</li>
+</ul>
 
-Contribuição
-Instruções sobre como contribuir para o projeto e as diretrizes de codificação a serem seguidas.
+<h2>Instalação</h2>
 
-Licença
-Declare qual licença o projeto é licenciado e quais são as restrições de uso.
+<p>Para clonar e instalar o projeto, siga os passos abaixo:</p>
 
-Autor
-Nome do autor ou equipe responsável pelo projeto e informações de contato, como e-mail e site.
+<ol>
+    <li>Clone o repositório para sua máquina:</li>
+</ol>
+
+<pre><code>git clone https://github.com/seu-usuario/gerenciamento-armarios-escolares.git</code></pre>
+
+<ol start="2">
+    <li>Importe o projeto em sua IDE de preferência.</li>
+    <li>Configure as variáveis de ambiente necessárias no arquivo <code>application.properties</code>, como mostrado abaixo:</li>
+</ol>
+
+<pre><code>spring.datasource.url=jdbc:mysql://localhost:3306/nome-do-banco-de-dados
+
