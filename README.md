@@ -31,12 +31,13 @@
 <pre><code>git clone https://github.com/RianErick/https:/armarios-api</code></pre>
 
 <ol start="2">
-    <li>Importe o projeto em sua IDE de preferência.</li>
-    <li>Configure as variáveis de ambiente necessárias no arquivo <code>application.properties</code>, como mostrado abaixo:</li>
+   
 </ol>
 
 <pre><code>spring.datasource.url=jdbc:mysql://localhost:3306/nome-do-banco-de-dados
 <ol start="4">
+ <li>Importe o projeto em sua IDE de preferência.</li>
+    <li>Configure as variáveis de ambiente necessárias no arquivo <code>application.properties</code>, como mostrado abaixo:</li>
     <li>Execute as migrações de banco de dados com o Flyway:</li>
     <li>Para Criar as tabelas no seu banco de dadoos</li>
 </ol>
