@@ -28,7 +28,7 @@
     <li>Clone o repositório para sua máquina:</li>
 </ol>
 
-<pre><code>git clone https://github.com/seu-usuario/gerenciamento-armarios-escolares.git</code></pre>
+<pre><code>git clone https://github.com/RianErick/https:/armarios-api</code></pre>
 
 <ol start="2">
     <li>Importe o projeto em sua IDE de preferência.</li>
