@@ -1,6 +1,7 @@
 package com.rian.armarios.model;
 
 
+import com.rian.armarios.model.Enums.StatusArmario;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -23,10 +24,8 @@ public class Armario  {
     private String localizacao;
 
     @Enumerated(EnumType.STRING)
-    private StatusArmario status;
+    private StatusArmario status = StatusArmario.DISPONIVEL;
 
-    public Armario(){
 
-    }
 
 }

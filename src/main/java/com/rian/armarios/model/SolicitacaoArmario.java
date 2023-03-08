@@ -1,5 +1,7 @@
 package com.rian.armarios.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.rian.armarios.model.Enums.StatusAluguel;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -24,6 +26,7 @@ public class SolicitacaoArmario {
     @JoinColumn(name = "armario_id")
     private Armario armario;
 
+    @JsonFormat(pattern = "dd-MM-yyyy")
     @Column(name = "data_sl_armario")
     private LocalDate dataAluguelArmario;
 

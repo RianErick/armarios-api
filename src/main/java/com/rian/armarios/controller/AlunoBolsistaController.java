@@ -31,7 +31,8 @@ public class AlunoBolsistaController {
     }
     @GetMapping("/buscar/{id}")
     public ResponseEntity <AlunoBolsista> findById(@PathVariable Long id){
-        return alunoBolsistaRepository.findById(id)
+        return alunoBolsistaRepository
+                .findById(id)
                 .map(alunoBolsista -> ResponseEntity.ok(alunoBolsista))
                 .orElseThrow(() -> new AlunoBolsistaException("Id do Aluno nao existe na base de dados"));
     }
@@ -43,6 +44,19 @@ public class AlunoBolsistaController {
         alunoBolsista.setId(id);
         alunoBolsistaService.salvar(alunoBolsista);
         return ResponseEntity.ok(alunoBolsista);
+    }
+    @DeleteMapping("/deletar/{id}")
+    public ResponseEntity<Void> deletar(@PathVariable Long id ){
+        if(!alunoBolsistaRepository.existsById(id)){
+            return ResponseEntity.notFound().build();
+        }
+        alunoBolsistaRepository.deleteById(id);
+        return ResponseEntity.noContent().build();
+    }
+    @GetMapping("/buscar/matricula/{matricula}")
+    public AlunoBolsista buscarPelaMatricula(@PathVariable String matricula){
+        return alunoBolsistaRepository.findByMatricula(matricula)
+                .orElseThrow(()-> new AlunoBolsistaException("Matricula nao encontrada"));
     }
 
 }

@@ -1,6 +1,8 @@
 package com.rian.armarios.controller;
 
+import com.rian.armarios.model.Armario;
 import com.rian.armarios.model.SolicitacaoArmario;
+import com.rian.armarios.repository.ArmarioRepository;
 import com.rian.armarios.repository.SolicitacaoArmarioRepository;
 import com.rian.armarios.service.SolicitacaoService.SolicitacaoArmarioService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,10 +21,12 @@ public class SolicitacaoArmarioController {
 
     @Autowired
     private SolicitacaoArmarioRepository solicitacaoArmarioRepository;
+
     @PostMapping("/solicitacao")
     @ResponseStatus(HttpStatus.CREATED)
     public SolicitacaoArmario solicitacao(@RequestBody SolicitacaoArmario solicitacao){
-        return solicitacaoArmarioService.solicitarArmario(solicitacao);
+       return solicitacaoArmarioService.solicitarArmario(solicitacao);
+
     }
     @GetMapping("/consultar")
     public List <SolicitacaoArmario> consulta (){
