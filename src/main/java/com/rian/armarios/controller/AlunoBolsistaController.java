@@ -34,7 +34,7 @@ public class AlunoBolsistaController {
     public ResponseEntity <AlunoBolsista> findById(@PathVariable Long id){
         return alunoBolsistaRepository
                 .findById(id)
-                .map(alunoBolsista -> ResponseEntity.ok(alunoBolsista))
+                .map(ResponseEntity::ok)
                 .orElseThrow(() -> new AlunoBolsistaException("Id do Aluno nao existe na base de dados"));
     }
     @PutMapping("/editar/{id}")
