@@ -2,16 +2,17 @@
     Gerenciamento de armarios escolares API ✅
  </h1>   
 <p>Este projeto é uma API de gerenciamento de armários escolares, com operações CRUD para as entidades "aluno" e "armário", além de funcionalidades adicionais como criação de listas de alunos e armários, criação de solicitações de armários para alunos específicos, e conexão com banco de dados utilizando a arquitetura REST API.</p>
+<p>Para Fins De Aprendizagem</p>
 
 <h2>Status do Projeto</h2>
  
   <h4>
     O projeto ainda está em fase de desenvolvimento sendo atualizado diariamente.
-    Atualmento conta com dois contribuidores.
+    Atualmente conta com dois contribuidores.
   </h4>
   
    🚀 Desenvolvedor Backend : Rian Erick
-    
+   
    🚀 Desenvolvedor Backend : Edclydson Sousa 
     
 
