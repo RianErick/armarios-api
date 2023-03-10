@@ -3,6 +3,7 @@ package com.rian.armarios.model;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.rian.armarios.model.Enums.StatusAluguel;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -18,10 +19,12 @@ public class SolicitacaoArmario {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @NotNull
     @OneToOne
     @JoinColumn(name = "aluno_id")
     private AlunoBolsista aluno;
 
+    @NotNull
     @OneToOne
     @JoinColumn(name = "armario_id")
     private Armario armario;
