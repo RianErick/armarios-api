@@ -1,11 +1,25 @@
 <h1>
-    Gerenciamento de armarios escolares
+    Gerenciamento de armarios escolares API ✅
  </h1>   
-<p>Este projeto é um sistema de gerenciamento de armários escolares, com operações CRUD para as entidades "aluno" e "armário", além de funcionalidades adicionais como criação de listas de alunos e armários, criação de solicitações de armários para alunos específicos, e conexão com banco de dados utilizando a arquitetura REST API.</p>
+<p>Este projeto é uma API de gerenciamento de armários escolares, com operações CRUD para as entidades "aluno" e "armário", além de funcionalidades adicionais como criação de listas de alunos e armários, criação de solicitações de armários para alunos específicos, e conexão com banco de dados utilizando a arquitetura REST API.</p>
+<p>Para Fins De Aprendizagem</p>
+
+<h2>Status do Projeto</h2>
+ 
+  <h4>
+    O projeto ainda está em fase de desenvolvimento sendo atualizado diariamente.
+    Atualmente conta com dois contribuidores.
+  </h4>
+  
+   🚀 Desenvolvedor Backend : Rian Erick
+   
+   🚀 Desenvolvedor Backend : Edclydson Sousa 
+    
+
 
 <h2>Requisitos</h2>
 
-<p>Para executar o projeto, você precisará ter as seguintes ferramentas instaladas em sua máquina:</p>
+<p> 🚧 Para executar o projeto, você precisará ter as seguintes ferramentas instaladas em sua máquina:</p>
 
 <ul>
     <li>Java 8 ou superior</li>
@@ -24,7 +38,7 @@
 
 <h2>Instalação</h2>
 
-<p>Para clonar e instalar o projeto, siga os passos abaixo:</p>
+<p> 💡 Para clonar e instalar o projeto, siga os passos abaixo:</p>
 
 <ol>
     <li>Clone o repositório para sua máquina:</li>
@@ -46,7 +60,7 @@ spring.datasource.password={sua_senha}
 <p>A API estará disponível na porta 8080 em seu navegador:</p>
 <pre><code>http://localhost:8080</code></pre>
 <h2>Endpoints</h2>
-<p>A API possui os seguintes endpoints:</p>
+<p>A API possui os seguintes endpoints 📚📚:</p>
 <ul>
     <li><code>GET /alunos</code>: Retorna uma lista com todos os alunos cadastrados.</li>
     <li><code>GET /alunos/{id}</code>: Retorna o aluno correspondente ao ID informado.</li>
