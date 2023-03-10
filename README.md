@@ -6,9 +6,8 @@
 <h2>Status do Projeto</h2>
 <p>
     O projeto ainda está em fase de desenvolvimento.
+    Atualmento conta com dois contribuidores.
     
-   - Atualmento conta com dois contribuidores -
- 
    🚀 Desenvolvedor Backend : Rian Erick
    🚀 Desenvolvedor Backend : Edclydson Sousa
   
