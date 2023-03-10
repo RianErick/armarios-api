@@ -5,6 +5,7 @@ import com.rian.armarios.handler.exception.ArmarioException;
 import com.rian.armarios.model.Armario;
 import com.rian.armarios.repository.ArmarioRepository;
 import com.rian.armarios.service.ArmarioService.ArmarioService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -22,7 +23,7 @@ public class ArmarioController {
     private ArmarioService armarioService;
     @PostMapping("/cadastrar")
     @ResponseStatus(HttpStatus.CREATED)
-    public Armario create( @RequestBody  Armario armario){
+    public Armario create( @RequestBody @Valid Armario armario){
         return armarioService.cadastrarArmario(armario);
     }
     @GetMapping("/listar")

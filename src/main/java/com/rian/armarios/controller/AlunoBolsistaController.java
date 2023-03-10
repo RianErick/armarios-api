@@ -5,6 +5,7 @@ import com.rian.armarios.handler.exception.AlunoBolsistaException;
 import com.rian.armarios.model.AlunoBolsista;
 import com.rian.armarios.repository.AlunoBolsistaRepository;
 import com.rian.armarios.service.AlunoService.AlunoBolsistaService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -26,18 +27,18 @@ public class AlunoBolsistaController {
     }
     @PostMapping("/cadastro")
     @ResponseStatus(HttpStatus.CREATED)
-    public AlunoBolsista create(@RequestBody AlunoBolsista aluno) {
+    public AlunoBolsista create(@RequestBody @Valid  AlunoBolsista aluno) {
         return alunoBolsistaService.salvar(aluno);
     }
     @GetMapping("/buscar/{id}")
     public ResponseEntity <AlunoBolsista> findById(@PathVariable Long id){
         return alunoBolsistaRepository
                 .findById(id)
-                .map(alunoBolsista -> ResponseEntity.ok(alunoBolsista))
+                .map(ResponseEntity::ok)
                 .orElseThrow(() -> new AlunoBolsistaException("Id do Aluno nao existe na base de dados"));
     }
     @PutMapping("/editar/{id}")
-    public ResponseEntity <AlunoBolsista> edit(@PathVariable Long id, @RequestBody AlunoBolsista alunoBolsista){
+    public ResponseEntity <AlunoBolsista> edit(@PathVariable Long id, @RequestBody @Valid AlunoBolsista alunoBolsista){
         if(!alunoBolsistaRepository.existsById(id)){
             return ResponseEntity.notFound().build();
         }

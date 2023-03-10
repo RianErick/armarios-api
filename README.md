@@ -1,4 +1,6 @@
-
+<h1>
+    Gerenciamento de armarios escolares
+ </h1>   
 <p>Este projeto é um sistema de gerenciamento de armários escolares, com operações CRUD para as entidades "aluno" e "armário", além de funcionalidades adicionais como criação de listas de alunos e armários, criação de solicitações de armários para alunos específicos, e conexão com banco de dados utilizando a arquitetura REST API.</p>
 
 <h2>Requisitos</h2>
@@ -48,17 +50,17 @@ spring.datasource.password={sua_senha}
 <ul>
     <li><code>GET /alunos</code>: Retorna uma lista com todos os alunos cadastrados.</li>
     <li><code>GET /alunos/{id}</code>: Retorna o aluno correspondente ao ID informado.</li>
+    <li><code>GET /alunos/{matricula}</code>: Retorna o aluno correspondente a Matricula informado.</li>
     <li><code>POST /alunos</code>: Cria um novo aluno.</li>
     <li><code>PUT /alunos/{id}</code>: Atualiza as informações de um aluno já cadastrado.</li>
     <li><code>DELETE /alunos/{id}</code>: Deleta o aluno correspondente ao ID informado.</li>
     <li><code>GET /armarios</code>: Retorna uma lista com todos os armários cadastrados.</li>
     <li><code>GET /armarios/{id}</code>: Retorna o armário correspondente ao ID informado.</li>
     <li><code>POST /armarios</code>: Cria um novo armário.</li>
-    <li><code>PUT /armarios/{id}</code>: Atualiza as informações de um armário já cadastrado.</li>
     <li><code>DELETE /armarios/{id}</code>: Deleta o armário correspondente ao ID informado.</li>
     <li><code>GET /alunos/{id}/armarios</code>: Retorna a lista de armários do aluno correspondente ao ID informado.</li>
     <li><code>GET /armarios/{id}/alunos</code>: Retorna a lista de alunos que possuem o armário correspondente ao ID informado.</li>
-    <li><code>POST /alunos/{id}/solicitar-armario?armarioId={id_do_armario}</code>: Cria uma solicitação de armário para o aluno correspondente ao ID informado, utilizando o armário informado pelo ID na query string.</li>
+    <li><code>POST /armario/solicitacao/</code:> Retorna um Json atribuido ao ID do aluno e ID do armario retornando os status respectivos.</li>
 </ul>
 <p>Todos os endpoints retornam as respostas em formato JSON.</p>
 

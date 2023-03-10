@@ -11,7 +11,4 @@ public interface AlunoBolsistaRepository extends JpaRepository<AlunoBolsista,Lon
 
     Optional <AlunoBolsista> findByMatricula(String matricula);
 
-
-
-
 }
