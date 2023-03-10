@@ -1,7 +1,7 @@
 <h1>
-    Gerenciamento de armarios escolares ✅
+    Gerenciamento de armarios escolares API ✅
  </h1>   
-<p>Este projeto é um sistema de gerenciamento de armários escolares, com operações CRUD para as entidades "aluno" e "armário", além de funcionalidades adicionais como criação de listas de alunos e armários, criação de solicitações de armários para alunos específicos, e conexão com banco de dados utilizando a arquitetura REST API.</p>
+<p>Este projeto é uma API de gerenciamento de armários escolares, com operações CRUD para as entidades "aluno" e "armário", além de funcionalidades adicionais como criação de listas de alunos e armários, criação de solicitações de armários para alunos específicos, e conexão com banco de dados utilizando a arquitetura REST API.</p>
 
 <h2>Status do Projeto</h2>
   <ul> 
