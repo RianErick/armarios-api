@@ -48,6 +48,7 @@ spring.datasource.password={sua_senha}
 <ul>
     <li><code>GET /alunos</code>: Retorna uma lista com todos os alunos cadastrados.</li>
     <li><code>GET /alunos/{id}</code>: Retorna o aluno correspondente ao ID informado.</li>
+     <li><code>GET /alunos/{matricula}</code>: Retorna o aluno correspondente a Matricula informado.</li>
     <li><code>POST /alunos</code>: Cria um novo aluno.</li>
     <li><code>PUT /alunos/{id}</code>: Atualiza as informações de um aluno já cadastrado.</li>
     <li><code>DELETE /alunos/{id}</code>: Deleta o aluno correspondente ao ID informado.</li>
