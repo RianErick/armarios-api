@@ -5,11 +5,14 @@
 
 <h2>Status do Projeto</h2>
   <ul> 
-     O projeto ainda está em fase de desenvolvimento.
+     O projeto ainda está em fase de desenvolvimento sendo atualizado diariamente.
+    
     Atualmento conta com dois contribuidores.
   
-   🚀 Desenvolvedor Backend : Rian Erick
-   🚀 Desenvolvedor Backend : Edclydson Sousa
+    <p>🚀 Desenvolvedor Backend : Rian Erick</p>
+    
+    <p>🚀 Desenvolvedor Backend : Edclydson Sousa</p>
+    
    <ul>  
 
 <h2>Requisitos</h2>
